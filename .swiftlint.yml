@@ -1,0 +1,36 @@
+disabled_rules: # rule identifiers to exclude from running
+  - colon
+  - comma
+  - control_statement
+  
+  - trailing_newline
+  - vertical_whitespace
+  
+  - unused_optional_binding
+  
+opt_in_rules: # some rules are only opt-in
+  - empty_count
+  # Find all the available rules by running:
+  # swiftlint rules
+  
+included: # paths to include during linting. `--path` is ignored if present.
+  - DelegateButtonAlert
+  
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Pods/
+  - Podfile
+  - Podfile.lock
+  
+  - DelegateButtonAlert/ExcludedFolder
+  - DelegateButtonAlert/ExcludedFile.swift
+  - DelegateButtonAlert/*/ExcludedFile.swift # Exclude files with a wildcard
+  
+analyzer_rules: # Rules run by `swiftlint analyze` (experimental)
+  - explicit_self
+  
+# 1行の文字数が200超えると警告、300超えるとエラーにする
+line_length:
+  - 200 # warning
+  - 300 # error
+
