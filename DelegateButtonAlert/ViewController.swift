@@ -28,7 +28,7 @@ final class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 10
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -38,6 +38,11 @@ extension ViewController: UITableViewDataSource {
             return UITableViewCell()
         }
 
+        cell.delegate = self
+        cell.alertSwitch.isOn = false
+        cell.indexPathLabel.text = "\(indexPath.section) - \(indexPath.row)"
+        cell.indexPath = indexPath
+
         return cell
     }
 
@@ -45,5 +50,19 @@ extension ViewController: UITableViewDataSource {
 
 }
 extension ViewController: UITableViewDelegate {
+
+}
+
+extension ViewController: SwitchCellDelegate {
+    func switchCell(_ cell: SwitchCell, switchValueChanged sender: UISwitch) {
+        if sender.isOn {
+            let alertController = UIAlertController(title: "", message: "\(cell.indexPath.section)-\(cell.indexPath.row)", preferredStyle: .alert)
+            let cancel = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(cancel)
+
+            present(alertController, animated: true, completion: nil)
+        }
+    }
+
 
 }
