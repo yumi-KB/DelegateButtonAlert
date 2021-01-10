@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol SwitchCellDelegate: class {
+protocol SwitchCellDelegate: AnyObject {
     func switchCell(_ cell: SwitchCell, switchValueChanged sender: UISwitch)
 }
 class SwitchCell: UITableViewCell {
