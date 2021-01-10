@@ -5,7 +5,7 @@ disabled_rules: # rule identifiers to exclude from running
   
   - trailing_newline
   - vertical_whitespace
-  
+  - force_cast
   - unused_optional_binding
   
 opt_in_rules: # some rules are only opt-in

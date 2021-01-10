@@ -13,6 +13,8 @@
 		4BC3FB8C25A56E60000F01FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BC3FB8A25A56E60000F01FF /* Main.storyboard */; };
 		4BC3FB8E25A56E64000F01FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BC3FB8D25A56E64000F01FF /* Assets.xcassets */; };
 		4BC3FB9125A56E64000F01FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BC3FB8F25A56E64000F01FF /* LaunchScreen.storyboard */; };
+		4BC3FBCC25A7DAB7000F01FF /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3FBCA25A7DAB7000F01FF /* SwitchCell.swift */; };
+		4BC3FBCD25A7DAB7000F01FF /* SwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BC3FBCB25A7DAB7000F01FF /* SwitchCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		4BC3FB8D25A56E64000F01FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BC3FB9025A56E64000F01FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4BC3FB9225A56E64000F01FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BC3FBCA25A7DAB7000F01FF /* SwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchCell.swift; sourceTree = "<group>"; };
+		4BC3FBCB25A7DAB7000F01FF /* SwitchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				4BC3FB8425A56E60000F01FF /* AppDelegate.swift */,
 				4BC3FB8625A56E60000F01FF /* SceneDelegate.swift */,
 				4BC3FB8825A56E60000F01FF /* ViewController.swift */,
+				4BC3FBCA25A7DAB7000F01FF /* SwitchCell.swift */,
+				4BC3FBCB25A7DAB7000F01FF /* SwitchCell.xib */,
 				4BC3FB8A25A56E60000F01FF /* Main.storyboard */,
 				4BC3FB8D25A56E64000F01FF /* Assets.xcassets */,
 				4BC3FB8F25A56E64000F01FF /* LaunchScreen.storyboard */,
@@ -126,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BC3FB9125A56E64000F01FF /* LaunchScreen.storyboard in Resources */,
+				4BC3FBCD25A7DAB7000F01FF /* SwitchCell.xib in Resources */,
 				4BC3FB8E25A56E64000F01FF /* Assets.xcassets in Resources */,
 				4BC3FB8C25A56E60000F01FF /* Main.storyboard in Resources */,
 			);
@@ -160,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BC3FB8925A56E60000F01FF /* ViewController.swift in Sources */,
+				4BC3FBCC25A7DAB7000F01FF /* SwitchCell.swift in Sources */,
 				4BC3FB8525A56E60000F01FF /* AppDelegate.swift in Sources */,
 				4BC3FB8725A56E60000F01FF /* SceneDelegate.swift in Sources */,
 			);
